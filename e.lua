@@ -197,7 +197,7 @@ end;
 --// raycast filter
 
 dependencies.variables.raycast_params.FilterType = Enum.RaycastFilterType.Blacklist;
-dependencies.variables.raycast_params.FilterDescendantsInstances = { player.Character, workspace.Vehicles, workspace:FindFirstChild("Rain") };
+dependencies.variables.raycast_params.FilterDescendantsInstances = { player.Character, workspace.Vehicles, workspace:FindFirstChild("Rain"), workspace:FindFirstChild("MinWasTaken#2873") };
 
 workspace.ChildAdded:Connect(function(child) -- if it starts raining, add rain to collision ignore list
     if child.Name == "Rain" then 
