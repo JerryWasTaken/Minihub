@@ -191,7 +191,7 @@ function movement:move_to_position(part, cframe, speed, car, target_vehicle, tri
     until (part.Position - higher_position).Magnitude < 10;
 
     part.CFrame = CFrame.new(part.Position.X, vector_position.Y, part.Position.Z);
-    part.Velocity = Vector3.zero;
+    --part.Velocity = Vector3.zero;
 end;
 
 --// raycast filter
