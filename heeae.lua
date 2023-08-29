@@ -183,7 +183,6 @@ local robberyMoneyGui = player.PlayerGui:WaitForChild("RobberyMoneyGui")
 local bagLabel = robberyMoneyGui.Container.Bottom.Progress.Amount
 local minimap = player.PlayerGui.AppUI.Buttons.Minimap.Map.Container.Points
 
-local branch = workspace.Switches.BranchBack
 local doors = getupvalue(getconnections(collectionService:GetInstanceRemovedSignal("Door"))[1].Function, 1)
 
 local modules = {
